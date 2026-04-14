@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awadh Academy | Competitive Exam Special</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --navy: #0a192f;
+            --gold: #ffcc00;
+            --white: #ffffff;
+            --bg: #f8f9fa;
+            --youtube: #FF0000;
+            --telegram: #0088cc;
+            --insta: #E1306C;
+        }
+
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg); color: #333; line-height: 1.6; scroll-behavior: smooth; }
+
+        /* Navbar */
+        header {
+            background: var(--navy);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .logo { color: var(--gold); font-weight: 800; font-size: 1.5rem; text-transform: uppercase; text-decoration: none; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), 
+                        url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 10%;
+        }
+        .hero h1 { font-size: 3rem; color: var(--gold); margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 25px; }
+
+        /* Buttons */
+        .cta-btn {
+            background: var(--gold);
+            color: var(--navy);
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+        .cta-btn:hover { background: white; transform: scale(1.05); }
+
+        /* Sections */
+        .section { padding: 60px 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+        
+        /* Social Cards */
+        .social-card {
+            padding: 25px;
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            display: block;
+        }
+        .social-card:hover { transform: translateY(-8px); filter: brightness(1.1); }
+        .yt { background: var(--youtube); }
+        .tg { background: var(--telegram); }
+        .ig { background: var(--insta); }
+
+        .app-promo {
+            background: var(--navy);
+            color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 40px 10%;
+            text-align: center;
+        }
+
+        footer { background: #050c18; color: #888; padding: 40px 10%; text-align: center; border-top: 1px solid #1a2a3a; }
+        .footer-socials a { color: white; margin: 0 15px; font-size: 1.8rem; transition: 0.3s; }
+        .footer-socials a:hover { color: var(--gold); }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">Awadh Academy</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#social">Social</a>
+        <a href="#download">App</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Taiyari Jeet Ki! 🏆</h1>
+    <p>Awadh Academy by Mangal Sir - India's Growing Competitive Platform.</p>
+    <a href="https://www.appcreator24.com/app3946813-og3841" target="_blank" class="cta-btn">
+        <i class="fas fa-download"></i> Download Official App
+    </a>
+</section>
+
+<section id="social" class="section">
+    <h2>Connect With Mangal Sir</h2>
+    <p>Free Classes, Study Material aur updates ke liye join karein.</p>
+    <div class="grid">
+        <a href="https://youtube.com/@awadhacademy_bymangal?si=58X-wEIBF4mRZMxV" target="_blank" class="social-card yt">
+            <i class="fab fa-youtube fa-3x"></i>
+            <h3>YouTube</h3>
+            <p>Live Classes & Strategy</p>
+        </a>
+        <a href="https://t.me/AwadhAcademyAppUpdates" target="_blank" class="social-card tg">
+            <i class="fab fa-telegram-plane fa-3x"></i>
+            <h3>Telegram</h3>
+            <p>Daily PDF & Quizzes</p>
+        </a>
+        <a href="https://www.instagram.com/awadhacademy_bymangal?igsh=MWl6emFsNm9icGo4bA==" target="_blank" class="social-card ig">
+            <i class="fab fa-instagram fa-3x"></i>
+            <h3>Instagram</h3>
+            <p>Exam Updates & Tips</p>
+        </a>
+    </div>
+</section>
+
+<div id="download" class="app-promo">
+    <h2 style="color: var(--gold);">Padhai Ab Rukegi Nahi!</h2>
+    <p>Sahi guide aur behtar study material ke liye hamara app aaj hi install karein.</p>
+    <br>
+    <a href="https://www.appcreator24.com/app3946813-og3841" target="_blank" class="cta-btn" style="background: #27ae60; color: white;">
+        <i class="fab fa-android"></i> Download App Now
+    </a>
+</div>
+
+<footer>
+    <div class="footer-socials" style="margin-bottom: 25px;">
+        <a href="https://youtube.com/@awadhacademy_bymangal?si=58X-wEIBF4mRZMxV" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/AwadhAcademyAppUpdates" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.instagram.com/awadhacademy_bymangal?igsh=MWl6emFsNm9icGo4bA==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>&copy; 2026 Awadh Academy - Excellence in Education.</p>
+    <p style="font-size: 0.8rem; margin-top: 10px;">By Mangal Sir</p>
+</footer>
+
+</body>
+</html>
